@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <!-- <input type="text" id="name">
+    <select id="courses">
+        <option>select course</option>
+        <option>HTML</option>
+        <option>CSS</option>
+    </select><br>
+    <input type="checkbox" id="game"> ps4
+    <button onclick="myForm()">Submit</button>
+
+    <p>you selected: <span id="sel"></span></p> -->
+
+    <form method="get" action="" onsubmit="myForm()">
+        <input type="text" id="name">
+        <input type="Submit" value="submit">
+
+    </form>
+
+    <script>
+
+        function myForm() {
+            event.preventDefault();
+
+            var name = document.getElementById('name').value;
+            if (name == '') {
+                alert('your name is required');
+            }
+
+            /*
+            var course = document.getElementById('courses');
+            var selectedCourse = course.options[course.selectedIndex].text;
+            
+            var game = document.getElementById('game').checked;
+            if (game == true) {
+                document.getElementById('sel').innerHTML='ps4';
+            }
+            */
+        }
+        
+    </script>
+    
+</body>
+</html>

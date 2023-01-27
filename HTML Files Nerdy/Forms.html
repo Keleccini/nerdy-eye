@@ -1,0 +1,116 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h3>HTML Forms</h3>
+    <h4>Part 1. Creating Form Elements</h4>
+    <form action="./Basic.html">
+        <p>
+            Text <br/>
+            <label>Name</label>
+            <input type="text" placeholder="e.g. John" required/>
+        </p>
+
+        <p>
+            Email <br/>
+            <label>Email Address</label>
+            <input type="email" placeholder="e.g. john@gmail.com" required/>
+
+            <p>
+                Tel <br/>
+                <label>Telephone No.</label>
+                <input type="tel" placeholder="e.g. 081 222 43434" />
+            </p>
+
+            <p>
+                Date <br/>
+                <label>Date of birth</label>
+                <input type="date" />
+            </p>
+
+            <p>
+                Colour <br/>
+                <label>Your Best Colour</label>
+                <input type="color" />
+            </p>
+
+            <p>
+                Password <br/>
+                <label>enter your password</label>
+                <input type="password" minlength="6" required/>
+            </p>
+
+            <p>
+                Numbers <br/>
+                <label>enter your age</label>
+                <input type="number" />
+            </p>
+
+            <p>
+                File <br/>
+                <label>Profile Picture</label>
+                <input type="file" />
+            </p>
+
+            <p>
+                Range <br/>
+                <label>Price Range</label>
+                <input type="range" />
+            </p>
+
+            <p>
+                Radio <br/>
+                <label>Gender:</label>
+                <input type="radio" name="sex" checked/> Male <input type="radio" name="sex"/> Female
+            </p>
+
+            <p>
+                Checkbox <br/>
+                <label>Courses:</label>
+                <input type="checkbox"/> HTML 
+                <input type="checkbox" checked/> CSS
+                <input type="checkbox"/> Javascript
+            </p>
+
+            <p>
+                Select<br/>
+                <select>
+                    <option value="">Choose Your Preferred Course</option>
+                    <option value="">HTML</option>
+                    <option value="">CSS</option>
+                    <option value="" selected>Javascript</option>
+                </select>
+            </p>
+
+            <p>
+                <textarea cols="50" rows="5" placeholder="type your message here">Actual pre-fill message comes here</textarea>
+            </p>
+
+            <p>
+                <input type="reset" value="Clear Form">
+                <input type="submit" value="Submit">
+                <button type="submit">Submit</button>
+            </p>
+        </p>
+    </form>
+
+    <h4>Part 2. Validation</h4>
+
+    <h4>Part 3. Pre-fill</h4>
+
+    <form action="./Basic.html">
+        <p>
+            Text <br/>
+            <label>Name</label>
+            <input type="text" placeholder="e.g. John" value="Yamz Porridge" disabled readonly required/>
+        </p>
+
+    </form>
+
+
+</body>
+</html>

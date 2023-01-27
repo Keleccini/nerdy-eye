@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Methods and Property</title>
+</head>
+<body>
+    <!-- <p id="sample">This is sample id content</p> -->
+
+    <p id="example">The id content text</p>
+
+    <p class="example">Example class text</p>
+
+    <p>Example tag text</p>
+
+    <div>This is a div text</div>
+    
+    <div>
+        <p>
+            This is a div text
+        </p>
+    </div>
+
+    <script>
+
+        
+        /*
+        DOM Methods
+        getElementById('')
+
+        DOM Property
+        innerHTML
+        
+        document.getElementById('sample').innerHTML='I just manipulated sample id'
+        
+        get element content
+        var x = document.getElementById('sample').innerHTML;
+        alert(x)
+        */
+
+        document.getElementById('example').innerHTML="New id text";
+        document.getElementsByClassName('example')[0].innerHTML="New class text";
+        document.getElementsByTagName('p')[2].innerHTML="new tag text";
+        document.querySelector('div').innerHTML="new div text";
+        document.querySelector('div > p').innerHTML="new div text";
+        document.querySelector('#example').innerHTML="new div text";
+        document.querySelector('.example').innerHTML="new div text";
+        document.querySelectorAll('p')[0].innerHTML="all new text";
+    </script>
+
+</body>
+</html>

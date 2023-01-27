@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extras</title>
+</head>
+<body>
+    <input type="text" id="src" onfocus="myFunction()">
+
+    <div>key up event</div>
+    <input type="text" id="write" onkeyup="myFunction()">
+
+    <p>you are typing: <span id="output"></span></p>
+
+    <script>
+        function myFunction() {
+            // document.getElementById('src').style.width="400px";
+            var txt = document.getElementById('write').value;
+            document.getElementById('output').innerHTML=txt;
+        }
+    </script>
+</body>
+</html>

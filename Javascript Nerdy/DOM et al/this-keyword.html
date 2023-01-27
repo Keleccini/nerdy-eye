@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>'This' Keyword</title>
+</head>
+<body>
+    <div onclick="clickMe(this)">change me 1</div>
+    <div onclick="clickMe(this)">change me 2</div>
+
+    <div onclick="son(this)">
+    <p>hey buddy 1</p>
+    <p>hey friend 1</p>
+    </div>
+
+    <div onclick="son(this)">
+    <p>hey buddy 2</p>
+    <p>hey friend 2</p>
+    </div>
+
+    <script>
+        function clickMe(id){
+            id
+            .innerHTML="new text";
+        }
+
+        function son(id){
+            var c = id.children;
+            c[0].innerHTML = "hey folks";
+        }
+    </script>
+</body
+</html> 

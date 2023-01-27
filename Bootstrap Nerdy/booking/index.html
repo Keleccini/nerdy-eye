@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookings</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md fixed-top bg-light">
+        <div class="container">
+            <a href="#" class="navbar-brand text-primary"><strong>TravelNowNow</strong></a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#bookingNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="bookingNavbar">
+                <ul class="navbar-nav m-auto">
+                    <li class="nav-item px-5"><a href="#booking" class="nav-link">Booking</a></li>
+                    <li class="nav-item px-5"><a href="#destinations" class="nav-link">Destinations</a></li>
+                    <li class="nav-item px-5"><a href="#requests" class="nav-link">Requests</a></li>
+                </ul>
+
+                <div class="d-flex mt-3 mt-md-0">
+                  <button class="btn btn-link">Sign In</button>
+                  <button class="btn btn-primary">Sign Up</button>
+                </div>
+            </div>
+        </div> 
+    </nav>
+
+    <!-- Carousel -->
+   <section id="booking">
+        <div class="carousel slide" data-bs-ride="carousel" id="heroSlider">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <div class="hero" style="background-image:url('./img/pexels-photo-11150272.jpeg')">
+                            <div class="hero-overlay">
+                                <h1>Ready for takeoff?</h1>
+                                <p>Book fast, travel faster with best deals</p>
+                            </div>
+                    </div>
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <div class="hero" style="background-image:url('./img/380569812.jpg')">
+                            <div class="hero-overlay">
+                                <h1>Book Hotels</h1>
+                                <p>Get the best prices on 2,000,000+ hotels</p>
+                            </div>
+                    </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#heroSlider" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#heroSlider" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+        </div>
+    </section>
+   <!-- navs and tabs -->
+
+   <div class="src-wrapper shadow-lg">
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <button class="nav-link active" id="flight-tab" data-bs-toggle="tab" data-bs-target="#flight-tab-pane">Flight</button>
+        </li>
+        <li class="nav-item">
+            <button class="nav-link" id="hotel-tab" data-bs-toggle="tab" data-bs-target="#hotel-tab-pane">Hotel</button>
+        </li>
+    </ul>
+
+    <div class="tab-content pt-4">
+        <div class="tab-pane fade show active" id="flight-tab-pane">
+            <h5>Flight Content</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam optio eaque eum at consectetur dolore quo a blanditiis, animi molestias reiciendis. Nisi odio fuga eaque eligendi alias obcaecati odit labore.</p>
+            <form action="#">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingInput" placeholder="flying from">
+                            <label for="floatingInput">flying from</label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingInput" placeholder="flying to">
+                            <label for="floatingInput">flying to</label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-floating mb-3">
+                            <input type="date" class="form-control" id="floatingInput" placeholder="departure">
+                            <label for="floatingInput">departure</label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <input type="number" class="form-control mb-3" placeholder="Seat No." min="1">
+                    </div>
+                </div>
+
+                <div class="d-grid">
+                    <input type="submit" class="btn btn-primary btn-lg" value="Search Flight">
+                </div>
+            </form>
+        </div>
+
+        <div class="tab-pane fade" id="hotel-tab-pane">
+            <h5>Hotel Content</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ab laudantium illo dolorem. Adipisci, quod voluptatum? Quia delectus assumenda vel iste repudiandae natus officiis nam, recusandae, ducimus, numquam debitis dolorem.</p>
+            <form action="#">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingInput" placeholder="location">
+                            <label for="floatingInput">location</label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-floating mb-3">
+                            <input type="date" class="form-control" id="floatingInput" placeholder="booking date">
+                            <label for="floatingInput">booking date</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-grid">
+                    <input type="submit" class="btn btn-primary btn-lg" value="Search Hotel">
+                </div>
+            </form>
+        </div>
+    </div>
+   </div>
+
+   <!-- cards -->
+   <section class="py-5" id="destinations">
+        <div class="container">
+            <h2 class="topHeading mb-5">Top Destination</h2>
+            <div class="row g-5">
+                <div class="col-md-4">
+                    <div class="card border-0">
+                    <img src="./img/maxresdefault.jpg" class=rounded alt="">
+                        <div class="card-header">
+                            <h5>Nigeria</h5>
+                            <p>Next flight departs on Jan. 28th</p>
+                        </div>
+                        <div class="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque odio tenetur deleniti facilis perspiciatis, repellat, neque sapiente dicta praesentium voluptas deserunt laudantium. Ipsa, similique molestiae minus quidem dolorem exercitationem nisi.</div>
+                        <div class="card-footer">footer</div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card border-0">
+                    <img src="./img/header-constance-halaveli-MALDIVESALLIN0717-d7fce24d8aa048d0893200032dc1d7bf.jpg" class=rounded alt="">
+                        <div class="card-header">
+                            <h5>Maldives</h5>
+                            <p>One flight daily</p>
+                        </div>
+                        <div class="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque odio tenetur deleniti facilis perspiciatis, repellat, neque sapiente dicta praesentium voluptas deserunt laudantium. Ipsa, similique molestiae minus quidem dolorem exercitationem nisi.</div>
+                        <div class="card-footer">footer</div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card border-0">
+                    <img src="./img/Bali-Viceroy-hotel.jpg" class=rounded alt="">
+                        <div class="card-header">
+                            <h5>Indonesia</h5>
+                            <p>Two flights per week</p>
+                        </div>
+                        <div class="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque odio tenetur deleniti facilis perspiciatis, repellat, neque sapiente dicta praesentium voluptas deserunt laudantium. Ipsa, similique molestiae minus quidem dolorem exercitationem nisi.</div>
+                        <div class="card-footer">footer</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- flex -->
+    <section class="py-5" id="requests">
+        <div class="container">
+            <div class="d-md-flex align-items-center justify-content-between bg-light p-5 rounded-5">
+                <div>
+                    <h2>Special Request</h2>
+                    <p>Will you love to personalize your service? Send a request.</p>
+                </div>
+
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reqModal">Place Request</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- modal -->
+    <div class="modal fade" id="reqModal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Special Request</h3>
+                    <button type="button"  class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="#" class="" id="">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingInput" placeholder="Subject">
+                            <label for="floatingInput">Subject</label>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" placeholder="Description" style="height: 250px;"></textarea>
+                            <label for="floatingInput">Description</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Send Request</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Accordion or FAQ -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center">FAQ</h2>
+        
+            <div class="accordion accordion-flush" id="faq">
+                <div class="accordion-items">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            What happens in a case of no-show?
+                        </button>
+                    </h2>
+
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#faq">
+                        <div class="accordion-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, a saepe quod nulla tempore veniam ipsum animi provident. Corporis eaque vitae ducimus modi velit, porro aliquid iusto ipsa obcaecati maiores!</div>
+                    </div>
+                </div>
+
+                <div class="accordion-items">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            Booking cancellation
+                        </button>
+                    </h2>
+
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#faq">
+                        <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci impedit placeat dicta iste, earum at animi doloremque, sit soluta et voluptatem rem sint saepe dolor eius nesciunt doloribus fuga est?</div>
+                    </div>
+                </div>
+
+                <div class="accordion-items">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            Transfer of booking tickets
+                        </button>
+                    </h2>
+
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#faq">
+                        <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est ex obcaecati expedita, libero esse explicabo laborum quia, cupiditate illo assumenda incidunt voluptate blanditiis eveniet quis error eligendi ad enim tempora.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <div class="bg-dark text-secondary py-5">
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3 class="text-light">TravelNowNow</h3>
+                    <p>We provide efficient booking process for all travellers.</p>
+                    <p>+234 812 345 6789<br> booking@travelnownow.com</p>
+                </div>
+
+                <div class="col-md-2">
+                    <h4 class="text-light">Pages</h4>
+                    <ul class="list-unstyled">
+                        <li>About Us</li>
+                        <li>Contact Us</li>
+                        <li>News & Blog</li>
+                        <li>Meet Our Team</li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h4 class="text-light">Link</h4>
+                    <ul class="list-unstyled">
+                        <li>Sign In</li>
+                        <li>Sign Up</li>
+                        <li>Privacy Policy</li>
+                        <li>Terms & Conditions</li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h4 class="text-light">Location</h4>
+                    <ul class="list-unstyled">
+                        <li>Nigeria</li>
+                        <li>Canada</li>
+                        <li>South Africa</li>
+                        <li>Kenya</li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h4 class="text-light">Booking</h4>
+                    <ul class="list-unstyled">
+                        <li>Flight</li>
+                        <li>Hotel</li>
+                        <li>Tours</li>
+                        <li>Cab Service</li>
+                    </ul>
+                </div>
+            </div>
+
+            <p class="border-top border-secondary py-5 my-5">Copyright &copy;2023 TravelNowNow. All rights reserved. </p>
+        </div>
+    </div>
+</body>
+</html> 

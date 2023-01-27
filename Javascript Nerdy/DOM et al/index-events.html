@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    
+    <button onclick="clickMe()">click here</button>
+
+    <button onmousehover="hoverMe()" onmouseout="leaveMe()" id="btn">hover here</button>
+
+    <p id="change">I am the current content</p>
+
+    <script>
+        function clickMe() {
+            // alert('Hey! You just clicked me');
+            document.getElementById('change').innerHTML="new kid on the block";
+        }
+
+        function hoverMe() {
+            document.getElementById('btn').style.background="red";
+        }
+
+        function leaveMe() {
+            document.getElementById('btn').style.background="none";
+        }
+    </script>
+</body>
+</html>
